@@ -27,10 +27,11 @@ export default class RoomProvider extends Component {
     try {
       let response = await Client.getEntries({
         content_type: "beachShelter",
-        order: "fields.name"
-        //order: "sys.createdAt"
+        //order: "fields.name"
+        order: "sys.createdAt"
       });
       let rooms = this.formatData(response.items);
+
       let featuredRooms = rooms.filter(room => room.featured === true);
       //
       let maxPrice = Math.max(...rooms.map(item => item.price));
@@ -41,6 +42,7 @@ export default class RoomProvider extends Component {
         featuredRooms,
         sortedRooms: rooms,
         loading: false,
+        //
         price: maxPrice,
         maxPrice,
         maxSize
@@ -62,7 +64,7 @@ export default class RoomProvider extends Component {
       return room;
     });
     return tempItems;
-  }
+  };
 
   getRoom = slug => {
     let tempRooms = [...this.state.rooms];
