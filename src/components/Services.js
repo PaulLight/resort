@@ -33,20 +33,20 @@ export default class Services extends Component {
   };
   render() {
     return (
-      <section className="services">
+      <div className="services">
         <Title title="services " />
         <div className="services-center">
           {this.state.services.map((item, index) => {
             return (
-              <article key={index} className="services">
+              <div key={index} className="services">
                 <span>{item.icon} </span>
                 <h6>{item.title}</h6>
                 <p>{item.info}</p>
-              </article>
+              </div>
             );
           })}
         </div>
-      </section>
+      </div>
     );
   }
 }

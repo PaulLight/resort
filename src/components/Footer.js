@@ -2,35 +2,32 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="main-footer">
-        <div className="container">
-          <div className="row">
-              <div className="col-md-3 cl-sm-6">
-                  <h4>Head</h4>
-                  <ul className="list-unstyled">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                  </ul>
-              </div>
-              <div className="col-md-3 cl-sm-6">
-                  <h4>Head</h4>
-                  <ul className="list-unstyled">
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                  </ul>
-              </div>
-            <div className="footer-botom">
-              <p className="text-xs-center">
-                &copy;{new Date().getFullYear} Beach Shelter - All Rights
-                Reserved
-              </p>
+    <footer>
+      <div>
+      <div className="footer">
+        <div className="container">  
+            <table>
+              <tr>
+                <th>Follow us:</th>
+                <th>Contact us: <a href="mailto:someone@example.com">Contact us by email</a></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Twitter</td>
+              </tr>
+              <tr>
+                <div className="column has-text-center">
+                  <a className="icon" href="https://www.facebook.com"><i className="fa fa-facebook"></i></a>
+                </div>
+                <div className="column has-text-center">
+                  <a className="icon" href="https://www.facebook.com"><i className="fa fa-facebook"></i></a>
+                </div>
+              </tr>
+              </table>
             </div>
+            <p>All right are reserved @Shelter.</p>
           </div>
-        </div>
-      </div>
     </div>
+    </footer>
   );
 }

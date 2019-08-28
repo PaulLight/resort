@@ -212,7 +212,7 @@ h6 {
 /* Title */
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -230,7 +230,7 @@ h6 {
 
 /* services */
 .services {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .services {
   background: var(--darkGrey);
@@ -513,45 +513,51 @@ h6 {
 }
 /* end of rooms fitler*/
 
-/*footer*/
+
+
+/*//////////////////////////////////*/
+
+/* Footer */
 .footer {
-  padding: 5rem 0;
+  background: rgba(194, 94, 1, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
 }
-.footer {
-  background: var(--darkGrey);
+.footer div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+.footer th  {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
   text-align: center;
 }
-.footer-center {
-  width: 90vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;
-}
-.footer span {
-  display: inline-block;
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-.footer h6 {
-  letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
-}
 .footer p {
-  width: 80%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 992px) {
-  .footer-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer p {
-    width: 100%;
+
+@media screen and (min-width: 576px) {
+  .footer {
+    padding: 2rem 3rem;
+  }
+  .footer h1 {
+    font-size: 3rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 2rem 6rem;
+  }
+  .footer h1 {
+    font-size: 4rem;
+  }
+}
+/* End of footer */
