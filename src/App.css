@@ -521,16 +521,9 @@ h6 {
 .footer {
   background: rgba(194, 94, 1, 0.5);
   color: var(--mainWhite);
-  padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-}
-.footer div {
-  width: 10rem;
-  height: 5px;
-  background: var(--primaryColor);
-  margin: 1.7rem auto;
 }
 .footer th  {
   display: table-cell;
@@ -539,10 +532,17 @@ h6 {
   text-align: center;
 }
 .footer p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 16px;
+  
+  margin-bottom: 1px;
 }
-
+.footer hr {
+  border: 1.3px solid rgb(255, 255, 255);
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
 
 @media screen and (min-width: 576px) {
   .footer {
@@ -560,4 +560,8 @@ h6 {
     font-size: 4rem;
   }
 }
+
+
+
+
 /* End of footer */

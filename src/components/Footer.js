@@ -4,30 +4,28 @@ export default function Footer() {
   return (
     <footer>
       <div>
-      <div className="footer">
-        <div className="container">  
-            <table>
-              <tr>
-                <th>Follow us:</th>
-                <th>Contact us: <a href="mailto:someone@example.com">Contact us by email</a></th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>Twitter</td>
-              </tr>
-              <tr>
-                <div className="column has-text-center">
-                  <a className="icon" href="https://www.facebook.com"><i className="fa fa-facebook"></i></a>
-                </div>
-                <div className="column has-text-center">
-                  <a className="icon" href="https://www.facebook.com"><i className="fa fa-facebook"></i></a>
-                </div>
-              </tr>
-              </table>
+        <div className="footer">
+          <div className="container">  
+          <div className="row">
+              <div className="column">
+                <h2>Beach Shelter</h2>
+                <p>Some text..</p>
+              </div>
+              <div className="column">
+                <h2>Links</h2>
+                <p>Some text..</p>
+              </div>
+              <div className="column">
+                <h2>Contact us</h2>
+                <p>Some text..</p>
+              </div>
             </div>
-            <p>All right are reserved @Shelter.</p>
+            <hr></hr>
           </div>
-    </div>
+              <p>All right are reserved @Shelter.</p>
+          </div>
+      </div>
     </footer>
   );
 }
+
